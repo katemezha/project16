@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item  col-auto">
+        <a class="nav-link" routerLink="/" 
+        [routerLinkActive]="'active'"
+        [routerLinkActiveOptions]="{ exact: true }">Информация</a>
+      </li>
+      <li class="nav-item  col-auto">
+        <a class="nav-link" 
+        routerLink="/department/0" 
+        [routerLinkActive]="'active'"
+        [routerLinkActiveOptions]="{ exact: true }">IT отдел</a>
+      </li>
+      <li class="nav-item  col-auto">
+        <a class="nav-link" 
+        routerLink="/department/1"
+         [routerLinkActive]="'active'"
+        [routerLinkActiveOptions]="{ exact: true }">Отдел продаж</a>
+      </li>
+      <li class="nav-item  col-auto">
+        <a class="nav-link" 
+        routerLink="/department/2" 
+        [routerLinkActive]="'active'"
+        [routerLinkActiveOptions]="{ exact: true }">Отдел доставки</a>
+      </li>
+      <li class="nav-item  col-auto">
+        <a class="nav-link" 
+        routerLink="/department/3"
+         [routerLinkActive]="'active'"
+        [routerLinkActiveOptions]="{ exact: true }">Юридический отдел</a>
+      </li>
+      <li class="nav-item  col-auto">
+        <a class="btn btn-primary" routerLink="/addworker"
+          >Добавить сотрудника</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>

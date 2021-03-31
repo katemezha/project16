@@ -1,0 +1,201 @@
+{
+  "workers": [
+    {
+      "id": 1,
+      "name": "Полина",
+      "surname": "Полинина",
+      "patronymic": "Полининина",
+      "phone": "+7(800)555-3535",
+      "email": "qwerty@mail.ru",
+      "date": "1998-10-21T13:28:06.419Z",
+      "department": 1,
+      "edit": false
+    },
+    {
+      "id": 2,
+      "name": "Петр",
+      "surname": "Петров",
+      "patronymic": "Петрович",
+      "phone": "+7(800)555-3535",
+      "email": "qwerty@mail.ru",
+      "date": "1998-10-21T13:28:06.419Z",
+      "department": 1,
+      "edit": false
+    },
+    {
+      "id": 3,
+      "name": "Петр",
+      "surname": "Петров",
+      "patronymic": "Петрович",
+      "phone": "+7(800)555-3535",
+      "email": "qwerty@mail.ru",
+      "date": "1997-10-21T13:28:06.419Z",
+      "department": 2,
+      "edit": false
+    },
+    {
+      "id": 4,
+      "name": "Петр",
+      "surname": "Петров",
+      "patronymic": "Петрович",
+      "phone": "+7(800)555-3535",
+      "email": "qwerty@mail.ru",
+      "date": "1990-10-21T13:28:06.419Z",
+      "department": 3,
+      "edit": false
+    },
+    {
+      "id": 5,
+      "name": "Иван ",
+      "surname": "Иванов",
+      "patronymic": "Иванович",
+      "phone": "+7(800)-555-3535",
+      "email": "mail@mail.ru",
+      "date": "1991-01-01T00:00:00.000Z",
+      "department": 0,
+      "edit": false
+    },
+    {
+      "id": 8,
+      "name": "GИван ",
+      "surname": "GИванов",
+      "patronymic": "Иванович",
+      "phone": "+7(800)-555-3535",
+      "email": "mail@mail.ru",
+      "date": "1981-01-01T00:00:00.000Z",
+      "department": 0,
+      "edit": false
+    },
+    {
+      "id": 9,
+      "name": "Федя ",
+      "surname": "Федоров",
+      "patronymic": "Иванович",
+      "phone": "+7(800)-555-3535",
+      "email": "mail@mail.ru",
+      "date": "1966-01-01T00:00:00.000Z",
+      "department": 0,
+      "edit": false
+    },
+    {
+      "id":10,
+      "name": "Маша ",
+      "surname": "Кедрова",
+      "patronymic": "Алексеевна",
+      "phone": "+7(800)-555-3535",
+      "email": "mail@mail.ru",
+      "date": "1978-01-01T00:00:00.000Z",
+      "department": 0,
+      "edit": false
+    },
+    {
+      "id":16,
+      "name": "Нина ",
+      "surname": "Ниннова",
+      "patronymic": "Алексеевна",
+      "phone": "+7(800)-555-3535",
+      "email": "mail@mail.ru",
+      "date": "1978-01-01T00:00:00.000Z",
+      "department": 2,
+      "edit": false
+    },
+    {
+      "id":15,
+      "name": "Инна ",
+      "surname": "Иоановна",
+      "patronymic": "Алексеевна",
+      "phone": "+7(800)-555-3535",
+      "email": "mail@mail.ru",
+      "date": "1978-01-01T00:00:00.000Z",
+      "department": 2,
+      "edit": false
+    },
+    {
+      "id":11,
+      "name": "Рина ",
+      "surname": "Ринатова",
+      "patronymic": "Алексеевна",
+      "phone": "+7(800)-555-3535",
+      "email": "mail@mail.ru",
+      "date": "1978-01-01T00:00:00.000Z",
+      "department": 2,
+      "edit": false
+    },
+    {
+      "id":21,
+      "name": "Мария ",
+      "surname": "Мариновна",
+      "patronymic": "Алексеевна",
+      "phone": "+7(800)-555-3535",
+      "email": "mail@mail.ru",
+      "date": "1978-01-01T00:00:00.000Z",
+      "department": 2,
+      "edit": false
+    }, {
+      "id":22,
+      "name": "Артем ",
+      "surname": "Ареков",
+      "patronymic": "Алексеевна",
+      "phone": "+7(800)-555-3535",
+      "email": "mail@mail.ru",
+      "date": "1978-01-01T00:00:00.000Z",
+      "department": 3,
+      "edit": false
+    },
+    {
+      "id":23,
+      "name": "Ольга ",
+      "surname": "Пилова",
+      "patronymic": "Алексеевна",
+      "phone": "+7(800)-555-3535",
+      "email": "mail@mail.ru",
+      "date": "1978-01-01T00:00:00.000Z",
+      "department": 0,
+      "edit": false
+    },
+    {
+      "id":24,
+      "name": "Мэри ",
+      "surname": "Лилова",
+      "patronymic": "Алексеевна",
+      "phone": "+7(800)-555-3535",
+      "email": "mail@mail.ru",
+      "date": "1978-01-01T00:00:00.000Z",
+      "department": 0,
+      "edit": false
+    }, 
+    {
+      "id":24,
+      "name": "Михаил ",
+      "surname": "Керов",
+      "patronymic": "Алексеевна",
+      "phone": "+7(800)-555-3535",
+      "email": "mail@mail.ru",
+      "date": "1978-01-01T00:00:00.000Z",
+      "department": 0,
+      "edit": false
+    },
+    {
+      "id":24,
+      "name": "Роман ",
+      "surname": "Зиноин",
+      "patronymic": "Алексеевна",
+      "phone": "+7(800)-555-3535",
+      "email": "mail@mail.ru",
+      "date": "1978-01-01T00:00:00.000Z",
+      "department": 0,
+      "edit": false
+    },
+    {
+      "id":34,
+      "name": "Никита ",
+      "surname": "Ритолин",
+      "patronymic": "Алексеевна",
+      "phone": "+7(800)-555-3535",
+      "email": "mail@mail.ru",
+      "date": "1978-01-01T00:00:00.000Z",
+      "department": 0,
+      "edit": false
+    }
+  ]
+}

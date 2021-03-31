@@ -1,0 +1,128 @@
+<ng-container>
+  <h5 *ngIf="department == 0" class="text-center">IT отдел</h5>
+  <h5 *ngIf="department == 1" class="text-center">Отдел продаж</h5>
+  <h5 *ngIf="department == 2" class="text-center">Отдел доставки</h5>
+  <h5 *ngIf="department == 3" class="text-center">Юридический отдел</h5>
+  <div class="conatiner">
+    <div class="row">
+      <div class="col">
+       
+   
+          <button type="button"
+            class="instruments__sorting-method m-2 btn btn-success"
+            (click)="sortType = 'аscendingId';"
+          >
+            по возрастанию id
+          </button>
+          <button type="button"
+            class="instruments__sorting-method m-2 btn btn-success"
+            (click)="sortType = 'descendingId';"
+          >
+            по убыванию id
+          </button>
+          <button type="button"
+            class="instruments__sorting-method m-2 btn btn-success"
+            (click)="sortType = 'аscendingAge'; "
+          >
+            по возрастанию возраста
+          </button>
+          <button type="button"
+            class="instruments__sorting-method m-2 btn btn-success"
+            (click)="sortType = 'descendingAge'; "
+          >
+            по убыванию возраста
+          </button>
+       
+     
+      </div>
+    
+    </div>
+    <div class="row">
+      <div class="col">
+      
+          <div class="col-12 mt-5">
+            <h2>Фильтр по имени или фамилии</h2>
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Имя Фамилия"
+              [(ngModel)]="searchStr"
+            />
+          </div>
+        
+      </div>
+     </div>
+  </div>
+
+
+
+ 
+  <table class="table mt-5">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Имя</th>
+        <th scope="col">Фамилия</th>
+        <th scope="col">Отчество</th>
+        <th scope="col">Телефон</th>
+        <th scope="col">Почта</th>
+        <th scope="col">Возраст</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="
+          let worker of workers
+            | department: department
+            | sortBy: sortType
+            | workersfilter: searchStr
+        "
+      >
+        <th>{{ worker.id }}</th>
+        <td *ngIf="!worker.edit">{{ worker.name }}</td>
+        <td *ngIf="!worker.edit">{{ worker.surname }}</td>
+        <td *ngIf="!worker.edit">{{ worker.patronymic }}</td>
+        <td *ngIf="!worker.edit">{{ worker.phone }}</td>
+        <td *ngIf="!worker.edit">{{ worker.email }}</td>
+
+        <td *ngIf="worker.edit">
+          <input type="text" [(ngModel)]="worker.name" />
+        </td>
+        <td *ngIf="worker.edit">
+          <input type="text" [(ngModel)]="worker.surname" />
+        </td>
+        <td *ngIf="worker.edit">
+          <input type="text" [(ngModel)]="worker.patronymic" />
+        </td>
+        <td *ngIf="worker.edit">
+          <input type="text" [(ngModel)]="worker.phone" />
+        </td>
+        <td *ngIf="worker.edit">
+          <input type="text" [(ngModel)]="worker.email" />
+        </td>
+        <td>{{ getAge(worker.date) }}</td>
+
+        <td>
+          <button
+            class="btn btn-outline-primary btn-sm"
+            (click)="editThisWorker(worker)"
+          >
+            Редактировать
+          </button>
+        </td>
+        <td>
+          <button
+            class="btn btn-outline-danger btn-sm"
+            (click)="deleteThisWorker(worker.id)"
+          >
+            Удалить
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</ng-container>
